@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    application-name: kafkaproducer
+    # HashiCorp Vault
+    vault:
+      application-name: kafkaproducer
+      host: ${HOST}
+      port: 8201
+      scheme: http
+      authentication: TOKEN
+      token: ${VAULT_TOKEN}
