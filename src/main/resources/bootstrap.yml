@@ -1,7 +1,7 @@
 spring:
   cloud:
     application-name: kafkaproducer
-    # HashiCorp Vault
+    # HashiCorp Vault .
     vault:
       application-name: kafkaproducer
       host: ${HOST:localhost}
