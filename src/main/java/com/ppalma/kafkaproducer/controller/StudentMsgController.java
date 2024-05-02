@@ -17,9 +17,9 @@ public class StudentMsgController {
 
   private final StudentMsgSenderService studentMsgSenderService;
 
-  @PostMapping
+  @PostMapping("/avg-notes")
   @ResponseStatus(HttpStatus.OK)
-  public void sendMessage(@RequestBody Student student) {
+  public void sendMessageForAvgNotes(@RequestBody Student student) {
     this.studentMsgSenderService.sendStudentMsgToTopic(student);
   }
 }

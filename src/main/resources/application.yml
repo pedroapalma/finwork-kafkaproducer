@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   application:
     name: kafkaproducer
@@ -14,7 +16,7 @@ spring:
 
 kafka:
   topic:
-    name: ${TOPIC:finwork_topic}
+    name: ${TOPIC:students_notes}
 
 value:
-  ${VALUE}
+  ${VALUE:properties}

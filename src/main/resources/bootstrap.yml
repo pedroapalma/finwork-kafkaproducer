@@ -4,8 +4,9 @@ spring:
     # HashiCorp Vault
     vault:
       application-name: kafkaproducer
-      host: ${HOST}
+      host: ${HOST:localhost}
       port: 8201
       scheme: http
       authentication: TOKEN
-      token: ${VAULT_TOKEN}
+      token: ${VAULT_TOKEN:00000000-0000-0000-0000-000000000000}
+      enabled: false
